@@ -14,10 +14,10 @@ async def on_ready():
 
 @bot.command()
 async def привет(ctx):
-    await ctx.send(f'Привет! Я бот {bot.user}! Я могу подсказать интересные советы для улучшения экологии! Напиши -help для получения списка команд.')
+    await ctx.send(f'Привет! Я бот {bot.user}! Я могу подсказать интересные советы для улучшения экологии! Напиши -помощь для получения списка команд.')
     
 @bot.command()
-async def help(ctx):
+async def помощь(ctx):
     await ctx.send("Команды бота: -совет; -картинка.")
 
 @bot.command()
