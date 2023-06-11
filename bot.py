@@ -13,8 +13,12 @@ async def on_ready():
     print(f'We have logged in as {bot.user}')
 
 @bot.command()
-async def hello(ctx):
-    await ctx.send(f'Привет! Я бот {bot.user}! Я могу подсказать интересные советы для улучшения экологии!')
+async def привет(ctx):
+    await ctx.send(f'Привет! Я бот {bot.user}! Я могу подсказать интересные советы для улучшения экологии! Напиши -help для получения списка команд.)
+    
+@bot.command()
+async def help(ctx):
+    await ctx.send("Команды бота: -совет; -картинка.")
 
 @bot.command()
 async def совет(ctx):
