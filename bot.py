@@ -18,7 +18,7 @@ async def привет(ctx):
     
 @bot.command()
 async def помощь(ctx):
-    await ctx.send("Команды бота: -совет; -картинка.")
+    await ctx.send(f'Команды бота: -совет; -картинка.')
 
 @bot.command()
 async def совет(ctx):
